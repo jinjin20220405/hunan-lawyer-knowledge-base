@@ -9,8 +9,8 @@ dist/
 build/
 *.pyc
 
-# 爬虫数据（本地生成，不应上传）
-hunan_lawyer_data/
+# 爬虫进度文件（本地生成，不应上传）
+hunan_lawyer_data/progress.json
 *.json
 !requirements.txt
 
