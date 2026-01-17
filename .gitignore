@@ -7,25 +7,40 @@ __pycache__/
 *.egg-info/
 dist/
 build/
+*.pyc
 
-# 爬虫数据
+# 爬虫数据（本地生成，不应上传）
 hunan_lawyer_data/
 *.json
+!requirements.txt
+
+# Word文档（源文件，转换后可删除）
+*.docx
+*.doc
+
+# 临时和测试文件
+*.log
+*.tmp
+测试状态.bat
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+.claude/
 
-# Windows
+# 系统文件
 Thumbs.db
 desktop.ini
-
-# macOS
 .DS_Store
 
-# 临时文件
-*.log
-*.tmp
-测试状态.bat
+# spec-workflow（开发模板）
+.spec-workflow/
+
+# Claude配置
+.claude/
+
+# Git历史中的敏感信息（如有）
+*.bak
+*.old

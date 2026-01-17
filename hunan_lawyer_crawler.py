@@ -24,7 +24,9 @@ if sys.platform == 'win32':
 
 # 配置
 BASE_URL = "https://www.hnlx.org.cn/"
-OUTPUT_DIR = "H:/lawyer-Knowledge Base/hunan_lawyer_data"
+# 使用脚本所在目录的相对路径
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_DIR = os.path.join(SCRIPT_DIR, "hunan_lawyer_data")
 
 # 行业规范分类配置
 CATEGORIES = {
